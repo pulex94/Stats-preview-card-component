@@ -1,0 +1,96 @@
+:root {
+  --VeryDarkBlue: hsl(233, 47%, 7%); /* (main background) */
+  --DarkBlue: hsl(244, 38%, 16%); /* (card background) */
+  --SoftViolet: hsl(277, 64%, 61%); /* (accent) */
+  --White: hsl(0, 0%, 100%); /* (main heading, stats) */
+  --TransparentWhite: hsla(0, 0%, 100%, 0.75); /* (main paragraph) */
+  --SlightlyTransparentWhite: hsla(0, 0%, 100%, 0.6); /* (stat headings) */
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Anton", sans-serif;
+  font-family: "Fraunces", serif;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--VeryDarkBlue);
+}
+p {
+  font-size: 15px;
+}
+
+.container {
+  width: 1100px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: var(--DarkBlue);
+  color: white;
+  border-radius: 15px;
+  flex-direction: row;
+}
+
+.img,
+.summary {
+  width: 50%;
+  height: 100%;
+}
+
+.img img {
+  height: 100%;
+  width: 100%;
+  background-image: var(--SoftViolet);
+  border-radius: 0px 15px 15px 0px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.summary-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.summary-2 div {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.summary-2 div p {
+  color: var(--SlightlyTransparentWhite);
+}
+
+.summary-1 h1 {
+  margin-bottom: 30px;
+}
+
+.summary-1 p {
+  color: var(--TransparentWhite);
+}
+
+.summary-2 div {
+  margin: 30px;
+}
+
+.insights-color {
+  color: var(--SoftViolet);
+}
